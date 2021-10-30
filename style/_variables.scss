@@ -1,0 +1,50 @@
+:root{
+    //fonts
+        //sharpSans
+        @font-face {
+            font-family: SharpSansNo1-Medium;
+            src: url(../resources/fonts/SharpSansNo1Medium-Regular.woff);
+        }
+        @font-face {
+            font-family: SharpSansNo1-Bold;
+            src: url(../resources/fonts/SharpSansNo1-Bold.woff);
+        }
+        @font-face {
+            font-family: SharpSansNo1-Semibold;
+            src: url(../resources/fonts/d746f11d11dd01067a58e13b965e23c7.woff);
+        }
+
+        //proximaNova
+        @font-face {
+            font-family: ProximaNova-Regular;
+            src: url(../resources/fonts/proximanova-regular-webfont.woff);
+        }
+
+
+    // Modal
+    --close: url(../resources/assets/times-solid.svg);
+
+    //header
+    --background-header: url(../resources/assets/group-4.svg);
+
+    //main
+        //container
+            //logos
+            --cluster: url(../resources/assets/Bitmap.png);
+            --asobanca: url(../resources/assets/asobanca.png);
+            --ipbf: url(../resources/assets/ipbf.jpg);
+            --hightelecom: url(../resources/assets/logo_hightelecom_horizontal.png);
+            --ebanx: url(../resources/assets/ebanx2_1.png);
+            --zendesk: url(../resources/assets/zendesk.png);
+
+            //speakers
+            --speaker:url(../resources/assets/img-aurnheimer.png);
+
+    //footer
+    --twiter: url(../resources/assets/twitter-brands.svg);
+    --facebook: url(../resources/assets/facebook-f-brands.svg);
+    --linkedIn: url(../resources/assets/linkedin-in-brands.svg);
+    --youtuve: url(../resources/assets/youtube-brands.svg);
+    --instagram: url(../resources/assets/instagram-brands.svg);
+    --snapchat: url(../resources/assets/snapchat-ghost-brands.svg);
+}
