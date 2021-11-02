@@ -133,6 +133,7 @@
                 </p>
                 <br>
                 <br>
+                <p class="ejemplo"></p>
             </div>
             <span class="logosContainer">
                 <img src="./resources/assets/group-5.jpg" alt="">
@@ -140,7 +141,7 @@
         </section>
         <section class="containerForm">
             <h3>¡Inscríbete y reserva tu lugar ahora!</h3>
-            <form>
+            <form id="form">
                 <label for="fname">Nombre</label><br>
                 <input type="text" id="fname" name="fname">
                 <br><br>
@@ -151,7 +152,7 @@
                 <input type="email" id="email" name="lname">
                 <br><br>
                 <label for="lname">País</label><br>
-                <input list="countries" name="country">
+                <input list="countries" name="countr" id='country'>
                 <datalist id="countries">
                     <option value="Argentina">
                     <option value="Chile">
@@ -161,7 +162,7 @@
                 </datalist>
                 <br><br>
                 <label for="lname">Número de teléfono</label><br>
-                <input type="text" id="number" name="number"><br><br>
+                <input type="number" id="phone" name="number"><br><br>
                 <label for="lname">Puesto de trabajo</label><br>
                 <input type="text" id="position" name="position"><br><br>
                 <input type="submit" value="Inscríbete" id="submit">
@@ -194,6 +195,6 @@
         </div>
         <span class="bottomBar"></span>
     </footer>
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
