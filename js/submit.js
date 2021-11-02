@@ -4,7 +4,7 @@ import {modal} from './modal.js'
 
 
 // Get the elements of the form
-const submitBtn = document.querySelector('#submit').value;
+// const submitBtn = document.querySelector('#submit').value;
 const form = document.querySelector('#form');
 // console.log(form)
 
