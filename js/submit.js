@@ -1,4 +1,7 @@
 import {modal} from './modal.js'
+// import {attendant} from './connection.js'
+
+
 
 // Get the elements of the form
 const submitBtn = document.querySelector('#submit').value;
@@ -7,6 +10,8 @@ const form = document.querySelector('#form');
 
 let asst = localStorage.getItem('ASSIST');
 // console.log(asst);
+
+
 
 const checkLocalStorage = (e) => {
     if(e !== ''){
@@ -42,19 +47,33 @@ const logSubmit = (e) => {
     let phone = document.querySelector('#phone').value;
     let position = document.querySelector('#position').value;
     // console.log(fname, lname, email, country, phone, position)
-    x = {
-        name: fname,
-        lastname: lname,
-        email: email,
-        country: country,
-        number: phone,
-        position: position
-    }
-    // console.log(x)
     
-    handleAdd(x)
-    modal.style.display = "block";
-    return console.log(x);
+    if(fname == '' || fname == null 
+        || lname == "" || lname == null
+        ||email == "" || email == null
+        ||country == "" || country == null
+        ||phone == null
+        ||position == ""|| position == null
+    ){
+        alert('Completar todos los datos')
+    }else{
+        x = {
+            name: fname,
+            lastname: lname,
+            email: email,
+            country: country,
+            number: phone,
+            position: position
+        }
+        // console.log(x)
+        
+        handleAdd(x)
+        modal.style.display = "block";
+        
+        // return console.log(x);
+    }
+
+
   }
 
 form.addEventListener('submit',logSubmit)

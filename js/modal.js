@@ -11,7 +11,7 @@ const xBtn = document.querySelector('.closeBtn');
 xBtn.addEventListener('click', ()=>{
     modal.style.display = "none";
     form.reset();
-    location.reload();
+    // location.reload();
 })
 
 export {modal}
